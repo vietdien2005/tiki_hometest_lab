@@ -1,0 +1,15 @@
+version: "3"
+
+services:
+  webapp:
+    container_name: webapp
+    image: flask_webapp:${IMAGE_TAG}
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    volumes:
+      - "./logs:/app/logs"
+    ports:
+      - "80:80"
+    networks:
+      - webproxy
