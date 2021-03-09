@@ -9,7 +9,7 @@
 
 ### Build
 
-- Command build Docker image
+- Command build Docker image with `IMAGE_TAG` is version of webapp module
 
 ```bash
 export IMAGE_TAG=$(python3 -c "import webapp; print(webapp.__version__)")
