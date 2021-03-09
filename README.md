@@ -5,9 +5,9 @@ Tiki Home Test
 ## Test 1
 
 - Build script to install base servers for production environment, use any automation tools suits you (ansible, saltstack, terraform, ...). The solution should setup following components, make any changes as you see fit, so we can assess your consideration for production-grade system
-  • sysadmin engineer accounts, hostname (dns), cli commands that you use often
-  • Install docker daemon, specify logging driver + storage driver of your choice
-  • server should be prepared / tuned for high network traffic workload
+  + sysadmin engineer accounts, hostname (dns), cli commands that you use often
+  + Install docker daemon, specify logging driver + storage driver of your choice
+  + server should be prepared / tuned for high network traffic workload
 
 - Solution: [link](./test_1/README.md)
 
