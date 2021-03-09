@@ -40,6 +40,27 @@ Or
 docker-compose up -d
 ```
 
+## Test
+
+- Add host `127.0.0.1   abc.xyz` to `/etc/hosts`
+- Command test:
+
+```bash
+curl http://abc.xyz
+```
+
+- Output
+
+```json
+{
+  "Accept": "*/*",
+  "Client IP": "127.0.0.1",
+  "Host": "abc.xyz",
+  "User-Agent": "curl/7.64.1"
+}
+```
+
 ### Logging
 
-
+- File `access.log`
+- Logs application will mount to folder `./logs`
