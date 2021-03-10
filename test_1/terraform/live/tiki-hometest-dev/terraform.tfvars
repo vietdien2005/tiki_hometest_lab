@@ -1,0 +1,7 @@
+region            = "asia-southeast1"
+zone_sing_b       = "asia-southeast1-b"
+vm_type           = "n1-standard-1"
+os_image          = "centos-cloud/centos-8"
+google_project_id = "hometest"
+instance_name     = "hometest-lab"
+ssh_user_admin    = "damviet"

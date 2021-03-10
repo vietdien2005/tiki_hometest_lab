@@ -1,0 +1,75 @@
+---
+- name: speedup vm
+  shell: tuned-adm profile {{ tuned_profile }}
+
+- name: start-profile
+  shell: tuned-adm active
+
+- name: Add custom kernel
+  copy:
+    src: "files/10-common.conf"
+    dest: "/etc/sysctl.d/10-common.conf"
+
+- name: reload kernel system
+  command: sysctl --system
+
+- name: Install python3-libselinux
+  dnf:
+    name: python3-libselinux
+    state: present
+
+- name: Disable SELinux
+  selinux:
+    state: disabled
+
+- name: Set hostname
+  hostname:
+    name: "{{ ansible_hostname }}"
+
+- name: Disable password
+  lineinfile:
+    dest: /etc/ssh/sshd_config
+    regexp: ^PasswordAuthentication
+    line: "PasswordAuthentication no"
+  notify: restart sshd
+
+- name: Set timezone to Asia/Ho_Chi_Minh
+  timezone:
+    name: Asia/Ho_Chi_Minh
+
+- name: install common tools
+  dnf:
+    name:
+      - epel-release
+      - yum-utils
+      - iptables-services
+      - sysstat
+      - nc
+      - git
+      - unzip
+      - wget
+      - jq
+      - rsync
+    state: present
+
+- name: disable firewalld service
+  service:
+    name: firewalld
+    enabled: no
+    state: stopped
+
+- name: Enable iptables service
+  service:
+    name: iptables
+    enabled: yes
+    state: started
+
+- name: Upgrade all packages
+  dnf:
+    name: "*"
+    state: latest
+    update_cache: yes
+
+- name: Reboot a slow machine that might have lots of updates to apply
+  reboot:
+    reboot_timeout: 3600

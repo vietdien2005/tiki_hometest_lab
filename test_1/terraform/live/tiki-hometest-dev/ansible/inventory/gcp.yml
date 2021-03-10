@@ -1,0 +1,11 @@
+plugin: gcp_compute
+projects:
+  - hometest
+regions:
+  - asia-southeast1
+filters: []
+hostnames:
+  - name
+auth_kind: serviceaccount
+service_account_file: ~/.config/gcloud/hometest_sa.json
+

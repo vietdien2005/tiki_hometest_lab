@@ -1,0 +1,4 @@
+- name: Install Docker
+  hosts: "{{ host }}"
+  roles:
+    - { role: docker, tags: docker }

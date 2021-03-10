@@ -1,0 +1,4 @@
+- name: Bootstrap Instance
+  hosts: "{{ host }}"
+  roles:
+    - { role: bootstrap, tags: bootstrap }
