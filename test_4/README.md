@@ -26,9 +26,9 @@
 
 ### Solution
 
-- Once you’ve detected and diagnosed the problem, it’s time to fix it. However, fixing a problem isn’t a one and done matter. After you find your solution, it has to be applied and tested in real time, and the knowledge learned documented.
-- Your solution should produce positive test results on all tiers of the system, in various environments, while maintaining or improving service quality.
-- It is a good to periodically backup your server. However, in this case, you need the most recent backup just in case things go south. Also, it is a necessary step to take especially if the solution is complex or that the team has some reservations about the solution they came up with.
+- Once you already detected and diagnosed the problems, it’s the right time to fix them. However, fixing a problem isn’t a one and done matter. After you find your solution, it has to be applied and tested in real time, and the knowledge learned documented.
+- Your solution should show positive test results on all tiers of the system and various environments, while maintaining or improving service quality.
+- It is good to backup your server periodically . However, in this case, you need the latest backup in case things it happens again. Furthermore, making backup is a necessary step to help the team solve complicated issues precisely and concisely.
 - In some cases, the engineering team will set up another server and route traffic to it before proceeding. This is not applicable in every case but if it can be done and it seems like the fix is taking long, then this should be considered.
 
 ### Document
