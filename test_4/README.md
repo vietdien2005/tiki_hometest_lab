@@ -37,9 +37,10 @@
 
 ## How about if it was your colleague that done it ?
 
-1. Ask questions to find out why ?
-2. Step in to offer solutions.
-3. Ask yourself if you could’ve taught them better.
-4. Ask yourself whether the mistake represents an anomaly or a pattern of behavior.
-5. Let you coworker take responsibility for that accident and don't blame on his/her in public.
-6. Finally, To make sure that those issues won't happen again or will be solved well if it happen, everything should be writen down in document.
+When my colleague in my team had destroyed a service, there are some things I should do below:
+
+- Firstly, ask questions to find out the reasons why.
+- Next, Step in to offer solutions. All offered solutions which are exactly what I will do when I made accident by myself.
+- Then, ask myself whether the mistake represents an anomaly or a pattern of behavior.
+- After that let my coworker take responsibility for that accident and don't blame on his/her in public, but it doesn't mean that you sweep failure away.
+- Finally, To make sure that those issues won't happen again or will be solved well if it happen, everything should be written down in document.
