@@ -37,4 +37,9 @@
 
 ## How about if it was your colleague that done it ?
 
-
+1. Ask questions to find out why ?
+2. Step in to offer solutions.
+3. Ask yourself if you could’ve taught them better.
+4. Ask yourself whether the mistake represents an anomaly or a pattern of behavior.
+5. Let you coworker take responsibility for that accident and don't blame on his/her in public.
+6. Finally, To make sure that those issues won't happen again or will be solved well if it happen, everything should be writen down in document.
